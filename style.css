@@ -1,0 +1,194 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #fffdf5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #5d4300;
+}
+
+/* Header */
+
+header {
+    padding: 35px 20px 10px;
+}
+
+.website-logo {
+    width: 190px;
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #8a6500;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #6b4f00;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+/* Social Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.social-card {
+    width: 240px;
+    min-height: 250px;
+    padding: 28px 18px;
+    border-radius: 22px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(90, 65, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(90, 65, 0, 0.25);
+}
+
+.social-card h2 {
+    margin: 18px 0 8px;
+    font-size: 24px;
+}
+
+.social-card p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+/* Social Logos */
+
+.social-logo {
+    width: 82px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Facebook */
+
+.facebook {
+    background: #1877f2;
+}
+
+.facebook .social-logo {
+    background: white;
+    color: #1877f2;
+    border-radius: 50%;
+    font-size: 72px;
+    line-height: 1;
+    padding-top: 15px;
+}
+
+/* Instagram */
+
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+}
+
+.instagram-icon {
+    position: relative;
+    border: 7px solid white;
+    border-radius: 24px;
+}
+
+.instagram-icon::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 6px solid white;
+    border-radius: 50%;
+}
+
+.instagram-icon::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background: white;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+}
+
+/* TikTok */
+
+.tiktok {
+    background: #000000;
+}
+
+.tiktok .social-logo {
+    font-size: 80px;
+    color: white;
+    text-shadow:
+        -5px -5px 0 #25f4ee,
+        5px 5px 0 #fe2c55;
+}
+
+/* Footer */
+
+footer {
+    padding: 10px 20px 25px;
+}
+
+footer p {
+    color: #8a6500;
+    font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .website-logo {
+        width: 145px;
+    }
+
+    .social-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
